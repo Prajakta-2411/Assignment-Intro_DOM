@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-[400px] mx-auto mt-10 text-center">
+      <div class="flex justify-center">
+        <img class="w-36" src="bmi.jpg" alt="" />
+      </div>
+      <h1 id="heading" class="text-2xl font-bold mb-[10px]">BMI Calculator</h1>
+      <div>
+        <div class="text-sm font-medium my-2 text-left">Height</div>
+        <div class="flex relative items-center mb-3">
+          <input
+            id="height"
+            type="text"
+            class="w-full px-3 py-2 border border-neutral-400 bg-neutral-100 rounded-md focus:outline-none focus:ring-3 focus:ring-violet-400"
+          />
+          <select
+            name=""
+            id=""
+            class="absolute right-1 px-1 py-2 focus:outline-none"
+          >
+            <option value="cm">cm</option>
+            <option value="meter">m</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <div class="text-sm font-medium my-2 text-left">Weight</div>
+        <div class="flex relative items-center mb-3">
+          <input
+            id="weight"
+            type="text"
+            class="w-full px-3 py-2 border border-neutral-400 bg-neutral-100 rounded-md focus:outline-none focus:ring-3 focus:ring-violet-400"
+          />
+          <select
+            name=""
+            id=""
+            class="absolute right-1 px-1 py-2 focus:outline-none"
+          >
+            <option value="cm">Kg</option>
+            <option value="meter">g</option>
+          </select>
+        </div>
+      </div>
+      <div class="">
+        <h1 class="font-medium text-sm text-left mb-3">BMI</h1>
+        <input
+          id="bmi"
+          type="text"
+          class="w-full px-3 py-2 border border-neutral-400 bg-neutral-100 rounded-md focus:outline-none focus:ring-3 focus:ring-violet-400"
+        />
+      </div>
+      <h1 id="result" class="text-sm font-bold text-center my-2"></h1>
+      <button
+        id="calculate"
+        class="bg-black text-white text-sm font-medium px-3 py-3 border rounded-md mt-4"
+        onclick="calculateBMI()"
+      >
+        Calculate BMI
+      </button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
